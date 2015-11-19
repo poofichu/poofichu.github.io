@@ -295,10 +295,10 @@ gulp.task('default', ['clean'], function (cb) {
     cb);
 });
 
-gulp.task('deploy', function() {
+gulp.task('gh-pages', function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages({
-      branch: "master"
+      branch: 'master'
     }));
 });
 

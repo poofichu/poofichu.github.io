@@ -26,13 +26,14 @@
     "merge-stream": "^0.1.7",
     "polybuild": "^1.0.5",
     "require-dir": "^0.3.0",
-    "run-sequence": "^1.0.2",
+    "run-sequence": "^1.1.4",
     "vulcanize": ">= 1.4.2",
     "web-component-tester": "^3.1.3"
   },
   "scripts": {
     "test": "gulp test:local",
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "deploy": "gulp && gulp gh-pages"
   },
   "engines": {
     "node": ">=0.10.0"
